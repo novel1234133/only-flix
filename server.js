@@ -71,6 +71,6 @@ app.put("/api/orders/:id",auth,(req,res)=>{
   if(!o) return res.status(404).json({error:"Not found"});
   o.status=String(req.body.status||o.status); save(db); res.json(o);
 });
-app.get("*",(req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
+app.get("*",(req,res)=>res.sendFile(path.join(__dirname,"index.html")));
 
 app.listen(PORT,()=>console.log(`Only Flix running on http://localhost:${PORT}`));
