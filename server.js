@@ -30,7 +30,7 @@ function auth(req,res,next){ if(req.session && req.session.admin) return next();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(session({secret:process.env.SESSION_SECRET || "only-flix-local-secret",resave:false,saveUninitialized:false,cookie:{httpOnly:true,sameSite:"lax"}}));
-app.use(express.static(path.join(__dirname,"public")));
+app.use(express.static(__dirname));
 
 app.get("/api/session",(req,res)=>res.json({loggedIn:!!(req.session&&req.session.admin)}));
 app.post("/api/login",(req,res)=>{
