@@ -14,9 +14,9 @@ function load() {
     const initial = {
       settings: {brand:"Only Flix", whatsapp:"8801996088845", website:"onlyflixbd.com"},
       products: [
-        {id:1,name:"Netflix Premium",category:"Netflix",price:299,duration:"1 Month",badge:"BEST SELLER",active:true},
-        {id:2,name:"Prime Video",category:"Prime Video",price:199,duration:"1 Month",badge:"POPULAR",active:true},
-        {id:3,name:"YouTube Premium",category:"YouTube",price:249,duration:"1 Month",badge:"TOP CHOICE",active:true}
+        {id:1,name:"Netflix Premium",category:"Netflix",price:199,duration:"1 Month",badge:"BEST SELLER",active:true},
+        {id:2,name:"Prime Video",category:"Prime Video",price:99,duration:"1 Month",badge:"POPULAR",active:true},
+        {id:3,name:"YouTube Premium",category:"YouTube",price:99,duration:"1 Month",badge:"TOP CHOICE",active:true}
       ],
       orders: []
     };
